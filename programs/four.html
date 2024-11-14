@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 1000px;
+            margin: auto;
+        }
+        .baneer{
+            width: 1000px;
+            height: auto;
+        }
+        .left{
+            width: 500px;
+            background-color: yellow;
+            height: 400px;
+            float: left;
+        }
+        .right{
+            width: 500px;
+            background-color: orange;
+            float: right;
+            height: 400px;
+        }
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width:999px){
+            #container{
+                width: 100%;
+            }
+            .baneer{
+                width: 100%;
+                height: auto;
+            }
+            .left{
+                width: 30%;
+                background-color: bisque;
+            }
+            .right{
+                width: 70%;
+                background-color: blueviolet;
+            }
+            .baneer img{
+                width: 100%;
+            }
+
+        }
+        @media screen and (max-width:600px){
+            .left{
+                width: 100%;
+                background-color: bisque;
+            }
+            .right{
+                width: 100%;
+                background-color: blueviolet;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="baneer">
+        <img src="./banner.webp"/>
+        </div>
+        <div class="left">
+            left
+        </div>
+        <div class="right">
+            right
+        </div>
+    </div>
+</body>
+</html>

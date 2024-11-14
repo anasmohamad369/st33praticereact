@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+       
+    </style>
+</head>
+<body id="hey">
+    <h2 id="txt" >
+            please select the option
+</h2>   
+    <input type="text" id="col" onchange="demo()"/>
+
+       <select id="color" onchange="demo1()">
+        <option> White</option>
+            <option> red</option>
+            <option value="yellow"> yellow</option>
+            <option> blue</option>
+            <option> orange</option>
+            <option>black</option>
+        </select>
+        <script>
+                function demo(){
+                    const x= document.getElementById('col').value;
+                    document.getElementById('hey').style.backgroundColor=x;
+                }
+                function demo1(){
+                    const x= document.getElementById('color').value;
+                    document.getElementById('hey').style.backgroundColor=x;
+                }
+        </script>
+    </body>
+
+</html>

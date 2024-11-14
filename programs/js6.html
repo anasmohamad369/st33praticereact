@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+      td ,th {
+        border: 1px solid black;
+        
+    }
+    table{
+        border: 1px solid black;
+    }
+  </style>
+     
+ 
+</head>
+<body>
+    
+
+    <table>
+       <tr> 
+        <th>
+            marks
+        </th>
+        <th>
+            RESULT
+        </th>
+       </tr>
+       <tr>
+        <td id="marks">
+
+        </td>
+        <td id="res">
+
+        </td>
+    </tr>
+        <script>
+        
+        let marks = prompt("enter marks");
+         if(marks<=35)
+          {
+            document.getElementById("res").innerHTML="fail";
+            document.getElementById("marks").innerHTML=marks;
+             // document.write("FAIL");
+        }
+        
+          else if(marks>35&&marks<50)
+          {
+            document.getElementById("res").innerHTML="Fourth class";
+            document.getElementById("marks").innerHTML=marks;
+
+        }
+          else if(marks>50&& marks<70)
+          {
+            document.getElementById("res").innerHTML="third class";
+            document.getElementById("marks").innerHTML=marks;
+          }
+          else if(marks>70 && marks<90)
+          {
+            document.getElementById("res").innerHTML="second class";
+            document.getElementById("marks").innerHTML=marks;
+          }
+          else if(marks>90 && marks<=100)
+          {
+            document.getElementById("res").innerHTML="first class";
+            document.getElementById("marks").innerHTML=marks;
+          }
+          else{
+            document.getElementById("res").innerHTML="invalid";
+            document.getElementById("marks").innerHTML=marks;
+          }
+    </script>
+    
+</table>
+</body>
+</html>

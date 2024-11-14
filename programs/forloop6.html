@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 250px;
+            width: 200px;
+            margin: 10px;
+        }
+        #img {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="img">
+        <!-- Images will be inserted here -->
+    </div>
+
+    <script>
+        for (let i = 1; i <= 5; i++) {
+            document.getElementById("img").innerHTML += 
+            "<img src='a" + i + ".jpg' alt='Image " + i + "' />";
+        }
+    </script>
+
+</body>
+</html>

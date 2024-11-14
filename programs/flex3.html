@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        height: 400px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+       align-items: center;
+       flex-wrap: wrap;
+    
+      }
+      .one{
+        height: 300px;
+        flex-wrap: wrap;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        background-color: aqua;
+      }
+      .sub{
+        height: 200px;
+        width: 200px;
+        background-image: url(./11-1.jpg);
+        background-size: cover;
+        background-position: center;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="box">
+      <div class="one">
+        <div class="sub">
+
+        </div>
+      </div>
+      <div class="one">css</div>
+      <div class="one">java</div>
+      <div class="one"> css</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+#container{
+    width: 1000px;
+    margin: auto;
+}
+.one{
+    height: 200px;
+    width: 1000px;
+    background-color: black;
+}
+.one img{
+    height:200px;
+    width: 100%;
+}
+.two{
+
+    width: 25%;
+    height: 500px;
+    background-color: blue;
+    float: left;
+}
+.three{
+    width: 35%;
+    height: 500px;
+    background-color: rgb(255, 0, 0);
+    float: left;
+}
+.four{
+    width: 40%;
+    height: 500px;
+    background-color: rgb(12, 148, 0);
+    float: left;
+
+}
+@media screen and (max-width:999px) {
+    #container{
+        width: 100%;
+    }
+    .one{
+        width: 100%;
+    }
+    
+    .two{
+        height: 300px;
+        width: 100%;
+        background-color: rgb(0, 17, 255);
+    }
+ .three{
+    height: 300px;
+    width: 30%;
+ }   
+ .four{
+    height: 300px;
+    width: 70%;
+ }
+}
+@media screen and (max-width:600px) {
+    #container{
+        width: 100%;
+    }
+    .one{
+        width: 100%;
+    }
+    .two,.three,.four{
+        height: 300px;
+        width: 100%;
+        background-color: rgb(0, 17, 255);
+    }
+    .three{
+        height: 300px;
+        width: 100%;
+        background-color: rgb(55, 255, 0);
+    }
+    .four{
+        height: 300px;
+        width: 100%;
+        background-color:   rgb(255, 0, 0);
+    }
+}

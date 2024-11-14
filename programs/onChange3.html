@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"> Java script</p>
+    <select id="size" onchange="demo1()">
+           <option> 12px</option>
+            <option> 10px</option>
+            <option > 14px</option>
+            <option> 16px</option>
+            <option> 20px</option>
+            <option>30px</option>
+        </select>
+        <script>
+            function demo1(){
+                const c= document.getElementById('size').value;
+                document.getElementById('txt').style.fontSize= c;
+            }
+        </script>
+</body>
+</html>

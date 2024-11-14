@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+      
+
+        table{
+            height: 200px;
+            
+            border: 2px solid black;
+        }
+        th ,td, tr{
+            border: 2px solid black;
+        }
+        th:hover{
+            background-color: rgb(0, 242, 255);
+
+        }
+       
+        .tab{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-top: 10px;
+            flex-direction: column;
+            background-color: bisque;
+        }
+        .h1tag{
+            height: 70px;
+            box-shadow:  0px 0px 10px 0px black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #ptag{
+            font-size: 25px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         
+    </style>
+</head>
+<body>
+   
+   
+   
+    <div class="h1tag">
+        <h1>Tax counter </h1>
+    </div>
+
+
+    <div class="tab">
+        <p id="ptag">
+            Please enter the salary in prompt Please refresh the page 
+        </p>
+    <table>
+        <tr>
+         <th>
+             Salary
+         </th>
+         <th>
+             Tax Amount
+         </th>
+         <th>
+             Take home sal
+         </th>
+     </tr> 
+     <tr>
+         <td id="sal">
+         </td>
+         <td id="tax">
+         </td>
+         <td id="tkh">
+         </td>
+     </tr>
+     </table>
+    </div>
+
+   
+
+    <script>
+       let sal = prompt("Enter th salary")
+       document.getElementById("sal").innerHTML=sal;
+            if(sal>50000)
+            {
+                tax=12;
+            }
+            else if(sal>30000 && sal<=40000 )
+            {
+                tax=10
+            }
+            else if(sal>40000 && sal<=50000 )
+            {
+                tax =5;
+            }
+            else   {
+        document.getElementById('tax').innerHTML="No tax"
+      }
+      const taxamt = (sal/100)*tax;
+      const takehand = sal-taxamt;
+
+      document.getElementById('tax').innerHTML=taxamt;
+      document.getElementById('tkh').innerHTML=takehand;
+    
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- use for of : for  the array
+use for in : for the object;
+for in for of both provide a way to iterate to the object or array 
+
+the differnce between the for in for of
+
+whereas for of operator provides acees to the calues of those keys
+const obj {
+    key/prop = value;
+}
+the for in operator returns the key of an object of array  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <table border="2px">
+   
+    
+<script>
+
+ var days = ['monday','tuesday','wednesday','thursday','friday'];
+  
+    for(let day in days)
+     {
+        document.write("<tr> <td> "+day+"</td><td> "+ days[day]+"</td></tr>");
+        }
+            // for(let day in days)
+            // {
+            //     document.write("<td>"+days[day]+"</td>");
+            // }
+    //  for(let day of days)
+    //  {
+    //         document.write(day+" "+"<br>")
+    //  }
+
+     </script>
+   </table> 
+
+</body>
+</html>

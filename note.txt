@@ -1,0 +1,118 @@
+promise promise is a object in java script thaat represents the eventual completion or failure of an asychronus operation 
+promise will be use in the api to fetch data 
+
+the promise has two properties : state and result 
+while a promise object is pending the result is un defined
+when a promise object is pending the result is a value
+whenn a promise object is rejected is an error in object
+
+.then(onfulfilment)-> it will use the when it will be promise full fil means program excute 
+.catch(onRejection)->it will used fo handling the errors 
+
+let promise = neww Promise(function(reslove, reject)){
+
+}
+
+async/ awit is intrroduced in ES6
+
+the key word before a function return the async os return a promise
+
+await makes a function wait for a promise the keyword async before a function makes the function return a promise
+
+async/await is 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+react 
+
+why react react is easy to learn 
+faster to build 
+SEO friendlines 
+Efficent Code Reuse facility 
+Vast communtiy of devlopers 
+
+installation 
+   node js 
+   npm create @vite latest app name
+
+floder structure 
+   tribepratice 
+    node modules 
+    index.html =>imp
+    src folder 
+     app.css
+     app.js
+     index.css
+     index.jsx
+
+how the file was rendering ?
+
+inbasic react project we have to the main file index.html in that we have the root 
+so the root it will be contain nothing
+
+in index.js 
+we should import the reactdom which was on virtualdom the react dom imported 
+and we should locally declared thee root 
+so we should bring that rood id and declare to the render 
+
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+so the create rot is the one of the methd so we taking id from that and render the code 
+
+
+<>
+</>
+wrapping elemets without wrapping what will happens ?
+
+the react contains the fragment 
+and have the div ,[],<></>
+div wil bn use but it is not good programming praticce
+and we have the [ ] after every elemnt we should give the comma in html code 
+<> </> the momst commonly used thi k in the react jsx is the fragment it will not be burden 
+
+
+declaration of variable 
+in the jsx code we cant write the any funtions only we can write at out of the function 
+
+variable
+im declaring here the varibale var x = "anas"
+root.render(
+ <>
+  <App/>
+  {x}
+ </>
+
+)
+without expression we cant render this  we can use the 
+so the expression will be render the code as js 
+{50+50} = > example
+
+
+
+
+
+exporting function, arrays ,varibles and 
+
+
+useSTATE IS one function where we can set the state intial and update the cureent state
+
+

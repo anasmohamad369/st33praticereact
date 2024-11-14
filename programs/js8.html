@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="6"></h1>
+    <h1 id="7"></h1>
+    <h1 id="8"></h1>
+    <h1 id="9"></h1>
+    <h1 id="10"></h1>
+    
+        <script>
+                let stu =["anas","charan","bhagi","yash"]
+                document.getElementById("6").innerHTML=stu[0];
+                stu.push("ayyappa");
+
+                document.getElementById(7).innerHTML=stu;
+                // document.getElementById(8).innerHTML=stu.pop();
+                stu.unshift("ayyapa");
+                document.getElementById(9).innerHTML=stu;
+                stu.shift()
+                stu.splice(4,0,"rrrrr")
+                stu.sort();
+                 document.getElementById(10).innerHTML=stu;
+
+    </script>
+
+</body>
+</html>

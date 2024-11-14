@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="reset()">click</button>
+    <button onclick="add()">CLicke her</button>
+    <script>
+
+        var str = "student Tribe 2025"
+        
+        var pat = /[^0-9]/g
+        // var path = /[a-z]/gi
+        var res = document.write(str.match(pat));
+        let name = "Anas"
+        function add()
+        {
+        let string = JSON.stringify(name);
+        localStorage.setItem("person",string);
+        }
+        function reset()
+        {
+            localStorage.removeItem("person")
+        }
+
+    </script>
+</body>
+</html>

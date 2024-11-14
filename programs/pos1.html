@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outter{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner{
+            width: 100%;
+            background-color: green;
+            position: absolute;
+            height: 50px;
+            bottom: -80px;
+            transition: 1s all;
+
+        }
+        .outter:hover .inner{
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+        <div class="outter">
+            <div class="inner">
+                  </div>
+        </div>
+</body>
+</html>
