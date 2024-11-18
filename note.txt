@@ -116,3 +116,12 @@ exporting function, arrays ,varibles and
 useSTATE IS one function where we can set the state intial and update the cureent state
 
 
+
+
+Map function
+      map function have mainly to the key and index
+searching
+ includes 
+ filter -searching
+ 
+ for the searching purpose we should use the filter and includes

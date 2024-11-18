@@ -3,10 +3,10 @@ import { FetchData } from './FetchData';
 
 export const Fetch = () => {
     const[state,setState] =useState([]);
-   const obj =[ fetch('https://fakestoreapi.com/products/')
+    fetch('https://fakestoreapi.com/products/')
             .then(res=>res.json())
             .then(json=>setState(json))
-   ]
+   
             return (
 
                 <div>
@@ -26,7 +26,7 @@ export const Fetch = () => {
                     ))}
                   </tbody>
                 </table>
-                <FetchData/>
+                {/* <FetchData/> */}
               </div>        
 
   )

@@ -6,6 +6,7 @@ export const Map = () => {
     const [state,setState] = useState(array)  
 
     const[json, setJson] = useState(data)
+    
     return (
     <>
         <h1> hello</h1>

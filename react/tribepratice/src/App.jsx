@@ -35,7 +35,8 @@ function App() {
 
       </table>
       <UseState/>
-      {/* <Usestateone/> */}
+      
+      <Usestateone/>
     </>
   )
 }
